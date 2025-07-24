@@ -4,30 +4,39 @@ const skills = [
     // Frontend Skills
     {name: "HTML/CSS", level: 65, category: "frontend"},
     {name: "JavaScript", level: 35, category: "frontend"},
-    {name: "React", level: 35, category: "frontend"},
-    {name: "Tailwind CSS", level: 10, category: "frontend"},
-    {name: "Next.js", level: 10, category: "frontend"},
+    {name: "React", level: 15, category: "frontend"},
+    {name: "Tailwind CSS", level: 15, category: "frontend"},
 
     // Backend Skills
-    {name: "Node.js", level: 10, category: "backend"},
-    {name: "Express.js", level: 10, category: "backend"},
+    {name: "Node.js", level: 15, category: "backend"},
     {name: "Firebase", level: 80, category: "backend"},
     {name: "MongoDB", level: 45, category: "backend"},
-    {name: "PostgreSQL", level: 10, category: "backend"},
-    {name: "GraphQL", level: 10, category: "backend"},
+
+    // Coding Skills
+    {name: "Python", level: 95, category: "coding"},
+    {name: "Java", level: 90, category: "coding"},
+    {name: "Swift", level: 70, category: "coding"},
+    {name: "C", level: 70, category: "coding"},
+    {name: "Assembly", level: 65, category: "coding"},
+
 
     // Tools
     {name: "Git/GitHub", level: 85, category: "tools"},
-    {name: "Docker", level: 25, category: "tools"},
-    {name: "Figma", level: 20, category: "tools"},
     {name: "VS Code", level: 45, category: "tools"},
+    {name: "IntelliJ", level: 45, category: "tools"},
+    {name: "Android Studio", level: 55, category: "tools"},
+    {name: "Xcode", level: 55, category: "tools"},
     {name: "Postman", level: 15, category: "tools"},
+    {name: "TensorBoard", level: 25, category: "tools"},
+    {name: "Docker", level: 25, category: "tools"},
+     {name: "Notion", level: 25, category: "tools"},
 ];
 
 const categories = [
     "all",
     "frontend",
     "backend",
+    "coding",
     "tools"
 ];
 

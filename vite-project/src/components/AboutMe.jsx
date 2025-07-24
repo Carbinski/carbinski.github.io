@@ -1,4 +1,4 @@
-import { Code, User, Briefcase } from 'lucide-react';
+import { Code, Briefcase, Microscope, Smartphone } from 'lucide-react';
 
 export const AboutMe = () => {
   return (
@@ -11,23 +11,28 @@ export const AboutMe = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             {/* TODO: Add information about yourslef */}
-            <h3 className="text-2xl font-semibold">Passionate Web Developer & Tech Creator</h3>
+            <h3 className="text-2xl font-semibold">
+              Computer Science at Georgia Tech
+            </h3>
 
             <p className="text-muted-foreground">
-              You can do whatever you want
-              And talk about yourself
+               My goal is to work at the intersection of full-stack development and machine learning by designing complete systems that leverage machine learning.
             </p>
 
             <p className="text-muted-foreground">
-              What I know and what I am Passionat
-              aboue!!!
+              I’m actively working on mobile apps, contributing to ML research, and collaborating on projects that push my technical and creative boundaries.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button"> Get in Touch </a>
 
-              {/* TODO: Add download for CV */}
-              <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+              <a 
+                href="/Carson McNeill Resume.pdf" 
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                target='_blank'
+                rel="noopener noreferrer"
+                download
+              >
                 Download CV
               </a>
             </div>
@@ -38,13 +43,13 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary"/>
+                  <Smartphone className="h-6 w-6 text-primary"/>
                 </div>
 
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> Web Development</h4>
+                  <h4 className='font-semibold text-lg'> App Development</h4>
                   <p className='text-muted-foreground'>
-                    I make them websites cause I'm so cool
+                    I create applications using Android Studio and Xcode, focusing on intuitive user experiences and robust functionality.
                   </p>
                 </div>
               </div>
@@ -53,13 +58,13 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary"/>
+                  <Microscope className="h-6 w-6 text-primary"/>
                 </div>
 
                                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> UI/UX Design</h4>
+                  <h4 className='font-semibold text-lg'> ML Research</h4>
                   <p className='text-muted-foreground'>
-                    I make them websites cause I'm so cool
+                    I do undergraduate research in the field of machine learning and artificial intelligence
                   </p>
                 </div>
               </div>
@@ -72,9 +77,9 @@ export const AboutMe = () => {
                 </div>
 
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> Project Management</h4>
+                  <h4 className='font-semibold text-lg'> Leadership and Collaboration</h4>
                   <p className='text-muted-foreground'>
-                    I carry my teammates and collaborate with them to achieve the best results
+                    I have experience leading teams and collaborating on projects, ensuring effective communication and successful outcomes.
                   </p>
                 </div>
               </div>

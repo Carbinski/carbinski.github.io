@@ -22,7 +22,7 @@ export const HeroSection = () => {
 
                     {/* TODO: add bio */}
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        A brief bio about myself! PLEASE HIRE ME!!!
+                        I’m a 3rd year Computer Science student at <span className="font-semibold">Georgia Tech</span>, specializing in <span className="font-semibold">Machine Learning</span> and <span className="font-semibold">Computer Networks</span>. I’m passionate about full-stack development and continually expanding my expertise in artificial intelligence and machine learning.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">

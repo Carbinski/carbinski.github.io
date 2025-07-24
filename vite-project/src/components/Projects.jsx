@@ -4,31 +4,31 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "Project One",
-        description: "A beautiful project that does amazing things.",
-        image: "/projects/project1.jpeg",
-        tags: ["React", "Tailwind", "Supabase"],
-        demoUrl: "#",
+        title: "The Buku App",
+        description: "A campus-focused marketplace startup that allows college students to buy and sell items.",
+        image: "/projects/bukuapp.jpeg",
+        tags: ["Xcode", "Swift", "Firebase", "Notion"],
+        demoUrl: "https://www.linkedin.com/company/thebukuapp?trk=similar-pages",
         githubUrl: "#",
     },
     {
         id: 2,
-        title: "Project Two",
-        description: "A beautiful project that does amazing things.",
-        image: "/projects/project2.png",
-        tags: ["React", "Tailwind", "Supabase"],
-        demoUrl: "#",
+        title: "WanderSync",
+        description: "An Android app that helps users plan and sync their travel itineraries with friends.",
+        image: "/projects/wandersync.png",
+        tags: ["Android Studio", "Java", "Firebase"],
+        demoUrl: "https://carbinski.github.io/CS2340D_Team28/",
         githubUrl: "#",
     },
     {
         id: 3,
-        title: "Project Three",
-        description: "A beautiful project that does amazing things.",
-        image: "/projects/project3.jpeg",
-        tags: ["React", "Tailwind", "Supabase"],
-        demoUrl: "#",
-        githubUrl: "#",
-    }
+        title: "SpecTackles",
+        description: "Hackathon-winning augmented reality glasses that help users control smart home devices with hand gestures.",
+        image: "/projects/spectackles.png",
+        tags: ["Lens Studio", "NextJS", "Firebase"],
+        demoUrl: "https://devpost.com/software/spectackles",
+        githubUrl: "https://github.com/Carbinski/HackGT-Temp?tab=readme-ov-file",
+    },
 ]
 
 // TODO: fill out the text and projects eventually
@@ -74,21 +74,25 @@ export const ProjectSection = () => {
 
                                 <div className="flex justify-between items-center">
                                     <div className="flex space-x-3">
-                                        <a 
-                                            href={project.demoUrl} 
-                                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                            target="_blank"
-                                        > 
-                                            <ExternalLink size={20}/>
-                                        </a>
+                                        {project.demoUrl && project.demoUrl !== "#" && (
+                                            <a 
+                                                href={project.demoUrl} 
+                                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                target="_blank"
+                                            > 
+                                                <ExternalLink size={20}/>
+                                            </a>
+                                        )}
 
-                                        <a 
-                                            href={project.githubUrl}
-                                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                            target="_blank"
-                                        >
-                                            <Github size={20}/>
-                                        </a>
+                                        {project.githubUrl && project.githubUrl !== "#" && (
+                                            <a 
+                                                href={project.githubUrl}
+                                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                target="_blank"
+                                            >
+                                                <Github size={20}/>
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +106,7 @@ export const ProjectSection = () => {
                         href="https://github.com/Carbinski"
                         target="_blank"
                     >
-                        Check My Github <ArrowRight size={16}/>
+                        Check My GitHub <ArrowRight size={16}/>
                     </a>
                 </div>
             </div>

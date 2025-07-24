@@ -18,7 +18,7 @@ export const ContactSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your team.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -77,14 +77,14 @@ export const ContactSection = () => {
                         <div className="pt-8">
                             <h4 className="font-medium mb-4"> Connect With Me </h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="#" target="_blank"> <Linkedin /> </a>
-                                <a href="#" target="_blank"> <Instagram /> </a>
+                                <a href="https://www.linkedin.com/in/carson-mcneill/" target="_blank"> <Linkedin /> </a>
+                                <a href="https://www.instagram.com/carson_mcneillllll/" target="_blank"> <Instagram /> </a>
                             </div>
                         </div>
                     </div>
 
                     <div className="bg-card p-8 rounded-lg shadow-xs">
-                        <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+                        <h3 className="text-2xl font-semibold mb-6"> Send a Message <span className="text-sm"> (Feature Coming Soon) </span> </h3>
 
                         <form className="space-y-6">
                             <div>
