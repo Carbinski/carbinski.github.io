@@ -96,10 +96,6 @@
   body {
     @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: "rlig" 1, "calt" 1;
-
-    background: linear-gradient(135deg, #000000 0%, #e4e4e4 100%);
-    color: var(--foreground);
-    transition: background 0.3s;
   }
 }
 

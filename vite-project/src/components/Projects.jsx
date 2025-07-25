@@ -6,7 +6,7 @@ const projects = [
         id: 1,
         title: "The Buku App",
         description: "A campus-focused marketplace startup that allows college students to buy and sell items.",
-        image: "/projects/bukuapp.jpeg",
+        image: "/projects/bukuapp.png",
         tags: ["Xcode", "Swift", "Firebase", "Notion"],
         demoUrl: "https://www.linkedin.com/company/thebukuapp?trk=similar-pages",
         githubUrl: "#",
@@ -29,6 +29,31 @@ const projects = [
         demoUrl: "https://devpost.com/software/spectackles",
         githubUrl: "https://github.com/Carbinski/HackGT-Temp?tab=readme-ov-file",
     },
+    {
+        id: 4,
+        title: "Agronav Research Analysis",
+        description: "Project focused on evaluating the generalizability of Agronav, a resarch paper on using ML for robot navigation.",
+        image: "/projects/agronav.png",
+        tags: ["AI", "TensorFlow", "Python"],
+        demoUrl: "https://docs.google.com/presentation/d/1lGJP4gWrtGXV4pMct62idTu602tspZfMK5FjVAu5lIM/edit?usp=sharing",
+        githubUrl: "#",
+    },
+    {
+        id: 5,
+        title: "Enable: 3D Printed Prosthetic Hand",
+        description: "A 3D printed prosthetic hand designed to be affordable and accessible for youths in need.",
+        image: "/projects/prosthetic.png",
+        tags: ["3D Printing", "Community Service"],
+    },
+    {
+        id: 6,
+        title: "Eagle Scout Project",
+        description: "Budgeted, planned, and organized the construction of three benches for local community.",
+        image: "/projects/eaglescout.jpeg",
+        tags: ["Leadership", "Community Service"],
+        demoUrl: "#",
+        githubUrl: "#"
+    }
 ]
 
 // TODO: fill out the text and projects eventually
