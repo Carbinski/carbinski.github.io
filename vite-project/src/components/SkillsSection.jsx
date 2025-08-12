@@ -4,11 +4,11 @@ const skills = [
     // Frontend Skills
     {name: "HTML/CSS", level: 65, category: "frontend"},
     {name: "JavaScript", level: 35, category: "frontend"},
-    {name: "React", level: 15, category: "frontend"},
+    {name: "React", level: 20, category: "frontend"},
     {name: "Tailwind CSS", level: 15, category: "frontend"},
 
     // Backend Skills
-    {name: "Node.js", level: 15, category: "backend"},
+    {name: "Node", level: 15, category: "backend"},
     {name: "Firebase", level: 80, category: "backend"},
     {name: "MongoDB", level: 45, category: "backend"},
 
@@ -29,7 +29,8 @@ const skills = [
     {name: "Postman", level: 15, category: "tools"},
     {name: "TensorBoard", level: 25, category: "tools"},
     {name: "Docker", level: 25, category: "tools"},
-     {name: "Notion", level: 25, category: "tools"},
+    {name: "Notion", level: 25, category: "tools"},
+    {name: "Excel", level: 40, category: "tools"}
 ];
 
 const categories = [
