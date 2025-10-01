@@ -3,12 +3,30 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const projects = [
     {
+        id: -1,
+        title: "BuzzFinder",
+        description: "A website for reporting missing items around Georgia Tech's campus",
+        image: "/projects/buzzfinder.png",
+        tags: ["React", "Next", "Google API"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/itsevelync/buzz-finder"
+    },
+    {
+        id: 0,
+        title: "InfraBlocks",
+        description: 'Hackathon-winning drag-and-drop tool to simplify the design and deployment of AWS microservice architectures',
+        image: "/projects/infrablocks.png",
+        tags: ["React Flow", "Terraform", "AWS"],
+        demoUrl: "https://devpost.com/software/infrablocks",
+        githubUrl: "https://github.com/infrablocks-oss/InfraBlocks"
+    },
+    {
         id: 1,
         title: "The Buku App",
         description: "A campus-focused marketplace startup that allows college students to buy and sell items.",
         image: "/projects/bukuapp.png",
         tags: ["Xcode", "Swift", "Firebase", "Notion"],
-        demoUrl: "https://www.linkedin.com/company/thebukuapp?trk=similar-pages",
+        demoUrl: "https://apps.apple.com/us/app/the-buku-app/id6751913315?l=es-MX",
         githubUrl: "#",
     },
     {
@@ -84,7 +102,7 @@ export const ProjectSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Here are some of my recent projects that showcase my skills and creativity.
+                    Here are some of my recent projects! Click on the links to learn more.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
