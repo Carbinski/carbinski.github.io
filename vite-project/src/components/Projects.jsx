@@ -3,6 +3,15 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const projects = [
     {
+        id: -2,
+        title: "SkillSwap",
+        description: "A iOS app designed to motivate the continuous learning and sharing of skills",
+        image: "/projects/skillswap.png",
+        tags: ["iOS", "Swift", "Firebase"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/gtiosclub"
+    },
+    {
         id: -1,
         title: "BuzzFinder",
         description: "A website for reporting missing items around Georgia Tech's campus",
