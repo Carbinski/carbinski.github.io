@@ -3,6 +3,15 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const projects = [
     {
+        id: -3,
+        title: "Chess Engine",
+        description: "A classical chess engine utilizing Alpha-Beta Pruning and Minimax evaluation to achieve an ~2000+ elo",
+        image: "/projects/chess.png",
+        tags: ["Java", "Python", "Pruning", "Minimax"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/Carbinski/chess_engine"
+    },
+    {
         id: -2,
         title: "SkillSwap",
         description: "A iOS app designed to motivate the continuous learning and sharing of skills",
@@ -106,7 +115,7 @@ export const ProjectSection = () => {
     return (
         <section id="projects" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4"> 
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                     Featured <span className="text-primary"> Projects</span>
                 </h2>
 
@@ -118,9 +127,9 @@ export const ProjectSection = () => {
                     {projects.map((project, key) => (
                         <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                             <div className="h-48 overflow-hidden">
-                                <img 
-                                    src={project.image} 
-                                    alt={project.title} 
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
                             </div>
@@ -134,8 +143,8 @@ export const ProjectSection = () => {
                                     ))}
                                 </div>
 
-                                <h3 className="text-xl font-semibold mb-1"> 
-                                    {project.title} 
+                                <h3 className="text-xl font-semibold mb-1">
+                                    {project.title}
                                 </h3>
 
                                 <p className="text-muted-foreground text-sm mb-4">
@@ -145,22 +154,22 @@ export const ProjectSection = () => {
                                 <div className="flex justify-between items-center">
                                     <div className="flex space-x-3">
                                         {project.demoUrl && project.demoUrl !== "#" && (
-                                            <a 
-                                                href={project.demoUrl} 
+                                            <a
+                                                href={project.demoUrl}
                                                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                                 target="_blank"
-                                            > 
-                                                <ExternalLink size={20}/>
+                                            >
+                                                <ExternalLink size={20} />
                                             </a>
                                         )}
 
                                         {project.githubUrl && project.githubUrl !== "#" && (
-                                            <a 
+                                            <a
                                                 href={project.githubUrl}
                                                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                                 target="_blank"
                                             >
-                                                <Github size={20}/>
+                                                <Github size={20} />
                                             </a>
                                         )}
                                     </div>
@@ -171,12 +180,12 @@ export const ProjectSection = () => {
                 </div>
 
                 <div className="text-center mt-12">
-                    <a 
+                    <a
                         className="cosmic-button w-fit flex items-center mx-auto gap-2"
                         href="https://github.com/Carbinski"
                         target="_blank"
                     >
-                        Check My GitHub <ArrowRight size={16}/>
+                        Check My GitHub <ArrowRight size={16} />
                     </a>
                 </div>
             </div>
