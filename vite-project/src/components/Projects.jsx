@@ -17,8 +17,8 @@ const projects = [
         description: "A iOS app designed to motivate the continuous learning and sharing of skills",
         image: "/projects/skillswap.png",
         tags: ["iOS", "Swift", "Firebase"],
-        demoUrl: "#",
-        githubUrl: "https://github.com/gtiosclub"
+        demoUrl: "https://devpost.com/software/skillswap-rwy4le",
+        githubUrl: "#"
     },
     {
         id: -1,
@@ -98,6 +98,8 @@ const projects = [
         description: "A 3D printed prosthetic hand designed to be affordable and accessible for youths in need.",
         image: "/projects/prosthetic.png",
         tags: ["3D Printing", "Community Service"],
+        demoUrl: "#",
+        githubUrl: "#"
     },
     {
         id: 8,

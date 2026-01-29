@@ -26,7 +26,7 @@ export const AboutMe = () => {
               <a href="#contact" className="cosmic-button"> Get in Touch </a>
 
               <a 
-                href="projects/Carson McNeill Resume.pdf" 
+                href="projects/Carson McNeill Resume _ Fall 2026 SWE.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 target='_blank'
                 rel="noopener noreferrer"
@@ -63,7 +63,7 @@ export const AboutMe = () => {
                                 <div className='text-left'>
                   <h4 className='font-semibold text-lg'> ML Research</h4>
                   <p className='text-muted-foreground'>
-                    I do undergraduate research in the field of machine learning and artificial intelligence
+                    I do research at the intersection of healthcare, artificial intelligence, and ubiquitous computing.
                   </p>
                 </div>
               </div>
