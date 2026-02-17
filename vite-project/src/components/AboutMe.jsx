@@ -15,7 +15,7 @@ export const AboutMe = () => {
             </h3>
 
             <p className="text-muted-foreground">
-               My goal is to work at the intersection of full-stack development and machine learning by designing complete systems that leverage machine learning.
+              My goal is to work at the intersection of full-stack development and machine learning by designing complete systems that leverage machine learning.
             </p>
 
             <p className="text-muted-foreground">
@@ -25,7 +25,7 @@ export const AboutMe = () => {
             <div className="flex flex-col md:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button"> Get in Touch </a>
 
-              <a 
+              <a
                 href="projects/Carson McNeill Resume _ Fall 2026 SWE.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 target='_blank'
@@ -37,18 +37,18 @@ export const AboutMe = () => {
             </div>
           </div>
 
-          {/* TODO: fill out the fields below */}
+          {/* Updated fields based on Resume */}
           <div className="grid grid-cols-1 gap-6">
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Smartphone className="h-6 w-6 text-primary"/>
+                  <Smartphone className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> App Development</h4>
+                  <h4 className='font-semibold text-lg'> Mobile & Full-Stack Development </h4>
                   <p className='text-muted-foreground'>
-                    I create applications using Android Studio and Xcode, focusing on intuitive user experiences and robust functionality.
+                    I build robust applications using Swift (iOS) and React, with experience in complex state management and cloud integration (Firebase, AWS).
                   </p>
                 </div>
               </div>
@@ -57,28 +57,28 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Microscope className="h-6 w-6 text-primary"/>
+                  <Microscope className="h-6 w-6 text-primary" />
                 </div>
 
-                                <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> ML Research</h4>
+                <div className='text-left'>
+                  <h4 className='font-semibold text-lg'> ML & Robotics Research </h4>
                   <p className='text-muted-foreground'>
-                    I do research at the intersection of healthcare, artificial intelligence, and ubiquitous computing.
+                    I conduct research in computer vision and autonomous systems, working on projects like pose estimation for healthcare and semantic segmentation for robot navigation.
                   </p>
                 </div>
               </div>
             </div>
-            
+
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary"/>
+                  <Briefcase className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> Leadership and Collaboration</h4>
+                  <h4 className='font-semibold text-lg'> Engineering Leadership </h4>
                   <p className='text-muted-foreground'>
-                    I have experience leading teams and collaborating on projects, ensuring effective communication and successful outcomes.
+                    I lead development teams (GT iOS Club) and compete in hackathons, winning awards for building developer tools and AR applications (HackGT Winner).
                   </p>
                 </div>
               </div>

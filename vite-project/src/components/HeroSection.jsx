@@ -1,16 +1,16 @@
-import {ArrowDown} from "lucide-react"
+import { ArrowDown } from "lucide-react"
 
 export const HeroSection = () => {
     return (
-        <section 
-            id="hero" 
+        <section
+            id="hero"
             className="relative min-h-screen flex flex-col items-center justify-center px-4"
-        >  
+        >
             <div className="container max-w-4xl mx-auto text-center z-10">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                         <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-                        <span className="text-primary opacity-0 animate-fade-in-delay-1"> 
+                        <span className="text-primary opacity-0 animate-fade-in-delay-1">
                             {" "}
                             Carson
                         </span>
@@ -20,9 +20,9 @@ export const HeroSection = () => {
                         </span>
                     </h1>
 
-                    {/* TODO: add bio */}
+                    {/* Bio updated to match resume details */}
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        I’m a 3rd year Computer Science student at <span className="font-semibold">Georgia Tech</span>, specializing in <span className="font-semibold">Machine Learning</span> and <span className="font-semibold">Computer Networks</span>. I’m passionate about full-stack development and continually expanding my expertise in artificial intelligence and machine learning.
+                        I'm a 3rd year Computer Science student at <span className="font-semibold">Georgia Tech</span>, specializing in <span className="font-semibold">Machine Learning</span> and <span className="font-semibold">Contextual Computing</span>. I’m passionate about full-stack development and conducting research at the intersection of AI and healthcare.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -35,7 +35,7 @@ export const HeroSection = () => {
 
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
                 <span className="text-sm text-muted-foreground mb-2">Scroll</span>
-                <ArrowDown className="h-5 w-5 text-primary"/>
+                <ArrowDown className="h-5 w-5 text-primary" />
             </div>
         </section>
     );
