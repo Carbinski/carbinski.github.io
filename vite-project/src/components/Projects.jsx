@@ -5,6 +5,17 @@ import { ProjectCard } from "./ProjectCard";
 
 const projects = [
     {
+        id: -8,
+        title: "FriendGroupRanker",
+        description: "Are you tired of your friends not hanging out? The solution is simple: GAMIFICATION",
+        extendedDescription: "FriendGroupRanker is a twist on Life360. Many friends will track each other's locations to know what they are up to and allow for more frequent hanging out. FriendGroupRanker takes this to the next level by allowing friends to 'clock in' and show their location. By doing this in social areas or around other friends they gain bonus points. After a period of time, the friend group can all get together and give out rewards (or punishments) for who is the best and worst memeber of the friend group.",
+        image: "/projects/friendGroupRanker/FGR.png",
+        imageGallery: ["/projects/friendGroupRanker/FGR.png", "/projects/friendGroupRanker/FGR_gallery.png"],
+        tags: ["Next, MongoDB, React, Shadcn"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/Carbinski/FriendGroupRanker"
+    },
+    {
         id: -7,
         title: "CanvasPlus",
         description: "CanvasPlus is a ground up redesign of Canvas with new focus on customization and student centered features",
@@ -29,7 +40,7 @@ const projects = [
     {
         id: -5,
         title: "Chess Engine",
-        description: "A classical chess engine utilizing Alpha-Beta Pruning and Minimax evaluation to achieve an ~2000+ elo",
+        description: "A classical chess engine utilizing Alpha-Beta Pruning and Minimax evaluation to achieve an ~2100+ elo",
         extendedDescription: "This chess engine was built from the ground up, implementing search algorithms such as Alpha-Beta Pruning with Minimax evaluation. It features iterative deepening, move ordering heuristics, and transposition tables to achieve competitive play at an estimated 2100+ Elo rating. Features also include the following: Open Book, PeSTO Position Evaluation, Killer Move Heuristics, Null Move Pruning, Adaptive Game Phase Evaluation, Adaptive Time Management based Search, Buffers to optimze Java's garbage collection, Stat Tracking, and Quiescence Search. I ended up create ~20 version of the bot. I originally created them in Python for ease of development, but I eventually started hitting performance issues and decided to switch to Java. To validate the bots improvement, I had them automatically play games against the pervious versions of bots and recorded the results.",
         image: "/projects/chess.png",
         imageGallery: [],
