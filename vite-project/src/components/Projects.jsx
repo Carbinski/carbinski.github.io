@@ -5,6 +5,17 @@ import { ProjectCard } from "./ProjectCard";
 
 const projects = [
     {
+        id: -9,
+        title: "ByteFight",
+        description: "Month-long bot competition on a King-of-the-Hill arena with painting and teleportation—finished near 2,000 Elo, top 15.",
+        extendedDescription: "ByteFight is a month-long competition where participants build the strongest bot possible; bots are continuously matched against each other on a shared ladder. I competed in an earlier ruleset that blended King-of-the-Hill scoring with territory painting and teleportation on a grid arena. My entry ended around 2,000 Elo, roughly top 15 overall. The bot combined minimax search, Monte Carlo tree search (MCTS), alpha-beta pruning, and A* pathfinding, with performance-critical logic in C++ exposed to Python through nanobind, plus simultaneous perturbation stochastic approximation (SPSA) for parameter tuning.",
+        image: "/projects/bytefight.png",
+        imageGallery: [],
+        tags: ["MCTS", "Alpha-Beta", "A*", "C++", "SPSA"],
+        demoUrl: "https://bytefight.org/home",
+        githubUrl: "https://github.com/Carbinski/LeBallerBots"
+    },
+    {
         id: -8,
         title: "FriendGroupRanker",
         description: "Are you tired of your friends not hanging out? The solution is simple: GAMIFICATION",
