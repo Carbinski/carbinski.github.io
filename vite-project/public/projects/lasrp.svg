@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="LASRP">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="100%" style="stop-color:#164e63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <text x="400" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="700" fill="#f0f9ff">LASRP</text>
+  <text x="400" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#bae6fd">LA social resources</text>
+</svg>
