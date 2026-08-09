@@ -19,7 +19,7 @@ export const AboutMe = () => {
             </p>
 
             <p className="text-muted-foreground">
-              I’m actively working on mobile apps, contributing to ML research, and collaborating on projects that push my technical and creative boundaries.
+              As a 4th year student, I'm contributing to ML research at ViTAL Lab, building full-stack products, and bringing consulting experience from Deloitte GPS into how I design and deliver systems.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 pt-4 justify-center">
@@ -78,7 +78,7 @@ export const AboutMe = () => {
                 <div className='text-left'>
                   <h4 className='font-semibold text-lg'> Engineering Leadership </h4>
                   <p className='text-muted-foreground'>
-                    I lead development teams (GT iOS Club) and compete in hackathons, winning awards for building developer tools and AR applications (HackGT Winner).
+                    I have led development teams through GT iOS Club and compete in hackathons, winning awards for building developer tools and AR applications (HackGT Winner).
                   </p>
                 </div>
               </div>

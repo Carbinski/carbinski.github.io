@@ -11,6 +11,9 @@ const skills = [
     {name: "Node", level: 15, category: "backend"},
     {name: "Firebase", level: 80, category: "backend"},
     {name: "MongoDB", level: 45, category: "backend"},
+    {name: "SQL", level: 70, category: "backend"},
+    {name: "Databricks", level: 55, category: "backend"},
+    {name: "Azure", level: 50, category: "backend"},
 
     // Coding Skills
     {name: "Python", level: 95, category: "coding"},
@@ -26,6 +29,7 @@ const skills = [
     {name: "IntelliJ", level: 45, category: "tools"},
     {name: "Android Studio", level: 55, category: "tools"},
     {name: "Xcode", level: 55, category: "tools"},
+    {name: "Power BI", level: 55, category: "tools"},
     {name: "Postman", level: 15, category: "tools"},
     {name: "TensorBoard", level: 25, category: "tools"},
     {name: "Docker", level: 25, category: "tools"},

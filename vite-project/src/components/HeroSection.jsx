@@ -22,7 +22,7 @@ export const HeroSection = () => {
 
                     {/* Bio updated to match resume details */}
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        I'm a 3rd year Computer Science student at <span className="font-semibold">Georgia Tech</span>, specializing in <span className="font-semibold">Machine Learning</span> and <span className="font-semibold">Contextual Computing</span>. I’m passionate about full-stack development and conducting research at the intersection of AI and healthcare.
+                        I'm a 4th year Computer Science student at <span className="font-semibold">Georgia Tech</span>, concentrating in <span className="font-semibold">Intelligence</span> and <span className="font-semibold">Internetworking</span>. I'm passionate about full-stack development and conducting research at the intersection of AI and healthcare.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">

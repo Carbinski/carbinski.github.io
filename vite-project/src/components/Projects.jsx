@@ -5,6 +5,17 @@ import { ProjectCard } from "./ProjectCard";
 
 const projects = [
     {
+        id: -10,
+        title: "Deloitte GPS",
+        description: "Software Engineer / Consultant for the Oregon Health Authority: unified 5 siloed behavioral health databases and built cross-agency utilization analytics.",
+        extendedDescription: "As a Software Engineer / Consultant on Deloitte's Government & Public Services team (GPS Summer Scholar, Summer 2026), I worked with the Oregon Health Authority to make previously siloed behavioral health data usable across agencies. I consolidated 5 agency-owned databases into Azure Data Lake Storage Gen2 using a Databricks medallion architecture, enabling first-time cross-agency identity resolution so analysts could track how individuals used behavioral health resources across government touchpoints. I led client-facing requirements meetings with OHA stakeholders, produced 70+ pages of source-system technical documentation (including example SQL), and designed a Power BI dashboard with geographic and timeline views of cross-resource utilization, backed by a Python agent that kept dashboard documentation in sync with the live artifact.",
+        image: "/projects/deloitte.svg",
+        imageGallery: [],
+        tags: ["Databricks", "Azure", "Power BI", "Python", "SQL"],
+        demoUrl: "#",
+        githubUrl: "#"
+    },
+    {
         id: -9,
         title: "ByteFight",
         description: "Month-long bot competition on a King-of-the-Hill arena with painting and teleportation—finished near 2,000 Elo, top 15.",
@@ -52,7 +63,7 @@ const projects = [
         id: -5,
         title: "CanvasPlus",
         description: "CanvasPlus is a ground up redesign of Canvas with new focus on customization and student centered features",
-        extendedDescription: "CanvasPlus is a multi-semester iOS app project where we aim to recreate canvas from the ground up with students and Apple platforms features in mind. My responsibilites involve utilizing the foundation model to summarize course announcements, implementing spotlight / semantic search, and customizable backgrounds.",
+        extendedDescription: "CanvasPlus was a multi-semester GT iOS Club project to rebuild Canvas from the ground up with students and Apple platform features in mind. My responsibilities included using the foundation model to summarize course announcements, implementing Spotlight / semantic search, and supporting customizable backgrounds.",
         image: "/projects/canvasplus.png",
         imageGallery: [],
         tags: ["iOS", "Swift", "API", "Spotlight"],
@@ -63,7 +74,7 @@ const projects = [
         id: -4,
         title: "SynchHub",
         description: "A multiplatform app designed to manage all user generated, education related media",
-        extendedDescription: "SynchHub is a Spring 2026 iOS club project where I served as a Senior Developer in charge of the Content Management subteam. My responsibilities included leading the development of the app's content storage and symantic search features. Additionally, I was in charge of building core feature such as the content grouping, infinite canvas, and batching system. Furthermore I created educational content to teach our developers how to follow MVVM and best practices during development.",
+        extendedDescription: "SynchHub was a Spring 2026 GT iOS Club project where I served as a Senior Developer leading the Content Management subteam. My responsibilities included content storage and semantic search features, plus core work on content grouping, an infinite canvas, and a batching system. I also created educational content to teach developers MVVM and development best practices.",
         image: "/projects/synchub.png",
         imageGallery: [],
         tags: ["iOS", "Swift", "Firebase", "Spotlight"],
