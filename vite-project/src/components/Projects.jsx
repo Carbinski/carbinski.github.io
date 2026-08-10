@@ -6,10 +6,10 @@ import { ProjectCard } from "./ProjectCard";
 const projects = [
     {
         id: -10,
-        title: "Deloitte GPS",
-        description: "Software Engineer / Consultant for the Oregon Health Authority: unified 5 siloed behavioral health databases and built cross-agency utilization analytics.",
-        extendedDescription: "As a Software Engineer / Consultant on Deloitte's Government & Public Services team (GPS Summer Scholar, Summer 2026), I worked with the Oregon Health Authority to make previously siloed behavioral health data usable across agencies. I consolidated 5 agency-owned databases into Azure Data Lake Storage Gen2 using a Databricks medallion architecture, enabling first-time cross-agency identity resolution so analysts could track how individuals used behavioral health resources across government touchpoints. I led client-facing requirements meetings with OHA stakeholders, produced 70+ pages of source-system technical documentation (including example SQL), and designed a Power BI dashboard with geographic and timeline views of cross-resource utilization, backed by a Python agent that kept dashboard documentation in sync with the live artifact.",
-        image: "/projects/deloitte.svg",
+        title: "Deloitte",
+        description: "Software Engineer / Consultant: unified 5 siloed behavioral health databases and built cross-agency utilization analytics.",
+        extendedDescription: "As a Software Engineer / Consultant (Summer 2026), I made previously siloed behavioral health data usable across agencies. I consolidated 5 agency-owned databases into Azure Data Lake Storage Gen2 using a Databricks medallion architecture, enabling first-time cross-agency identity resolution so analysts could track how individuals used behavioral health resources across government touchpoints. I led client-facing requirements meetings, produced 70+ pages of source-system technical documentation (including example SQL), and designed a Power BI dashboard with geographic and timeline views of cross-resource utilization, backed by a Python agent that kept dashboard documentation in sync with the live artifact.",
+        image: "/projects/deloitte.png",
         imageGallery: [],
         tags: ["Databricks", "Azure", "Power BI", "Python", "SQL"],
         demoUrl: "#",
