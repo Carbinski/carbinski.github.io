@@ -1,4 +1,4 @@
-import { Code, Briefcase, Microscope, Smartphone } from 'lucide-react';
+import { Cloud, Microscope, Rocket } from 'lucide-react';
 
 export const AboutMe = () => {
   return (
@@ -11,22 +11,22 @@ export const AboutMe = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Computer Science at Georgia Tech
+              Building systems that hold up in production
             </h3>
 
             <p className="text-muted-foreground">
-              My goal is to work at the intersection of full-stack development and machine learning by designing complete systems that leverage machine learning.
+              I'm a 4th year Computer Science student at Georgia Tech, concentrating in Intelligence and Internetworking.
             </p>
 
             <p className="text-muted-foreground">
-              As a 4th year student, I'm contributing to ML research at ViTAL Lab, building full-stack products, and bringing consulting experience from Deloitte GPS into how I design and deliver systems.
+              This fall I'm an SDE Intern at Amazon Web Services, working on scheduled tunnel maintenance for Site-to-Site VPN in Scala. I also do computer vision research at ViTAL Lab. Before AWS, I spent the summer at Deloitte building a behavioral health data platform for a state government client.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button"> Get in Touch </a>
 
               <a
-                href="projects/Carson McNeill Resume _ Fall 2026 SWE.pdf"
+                href="/projects/Carson_McNeill_Resume.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 target='_blank'
                 rel="noopener noreferrer"
@@ -42,13 +42,13 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Smartphone className="h-6 w-6 text-primary" />
+                  <Cloud className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> Mobile & Full-Stack Development </h4>
+                  <h4 className='font-semibold text-lg'> Cloud & Backend Systems </h4>
                   <p className='text-muted-foreground'>
-                    I build robust applications using Swift (iOS) and React, with experience in complex state management and cloud integration (Firebase, AWS).
+                    I write production Scala on AWS, from configurable scheduling logic to reusable service packages.
                   </p>
                 </div>
               </div>
@@ -61,9 +61,9 @@ export const AboutMe = () => {
                 </div>
 
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> ML & Robotics Research </h4>
+                  <h4 className='font-semibold text-lg'> Computer Vision Research </h4>
                   <p className='text-muted-foreground'>
-                    I conduct research in computer vision and autonomous systems, working on projects like pose estimation for healthcare and semantic segmentation for robot navigation.
+                    I enhance detection, re-identification, and pose estimation pipelines that help identify behaviors in profoundly autistic subjects, and I validate them against ground truth I label myself.
                   </p>
                 </div>
               </div>
@@ -72,13 +72,13 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <Rocket className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className='text-left'>
-                  <h4 className='font-semibold text-lg'> Engineering Leadership </h4>
+                  <h4 className='font-semibold text-lg'> Products & Entrepreneurship </h4>
                   <p className='text-muted-foreground'>
-                    I have led development teams through GT iOS Club and compete in hackathons, winning awards for building developer tools and AR applications (HackGT Winner).
+                    I build and ship my own products. I'm also drawn to startups, and I spend time talking with founders as I work toward building a company of my own.
                   </p>
                 </div>
               </div>

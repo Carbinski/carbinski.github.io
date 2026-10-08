@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export const ProjectCard = ({ project, isOpen, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -36,11 +37,14 @@ export const ProjectCard = ({ project, isOpen, onClose }) => {
                 </button>
 
                 {/* Image Gallery */}
-                <div className="relative w-full h-64 sm:h-72 overflow-hidden rounded-t-xl">
+                <div className={cn("relative w-full h-64 sm:h-72 overflow-hidden rounded-t-xl", project.imageFit === "contain" && "bg-white")}>
                     <img
                         src={images[currentImageIndex]}
                         alt={`${project.title} - image ${currentImageIndex + 1}`}
-                        className="w-full h-full object-cover transition-opacity duration-300"
+                        className={cn(
+                            "w-full h-full transition-opacity duration-300",
+                            project.imageFit === "contain" ? "object-contain p-8" : "object-cover"
+                        )}
                     />
 
                     {images.length > 1 && (

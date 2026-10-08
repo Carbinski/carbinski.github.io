@@ -1,28 +1,63 @@
 import { useState } from "react";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { ProjectCard } from "./ProjectCard";
+import { cn } from "@/lib/utils";
 
 
 const projects = [
     {
+        id: -13,
+        title: "AWS Site-to-Site VPN",
+        description: "SDE Intern (Fall 2026): own enhancements to customer-scheduled tunnel maintenance for AWS Site-to-Site VPN.",
+        extendedDescription: "As a Software Development Engineer Intern at Amazon Web Services in Herndon, VA (September to December 2026), I own all enhancements to an existing feature that lets customers schedule tunnel maintenance for AWS Site-to-Site VPN, and I write the design and customer experience docs for that work. I replaced a hardcoded gap between a VPN connection's two tunnel replacements with a configurable setting in Scala to cut downtime, and reworked the scheduling logic to push back only the later tunnel and skip ineligible tunnels, which removed unnecessary database checks. I also extracted notification logic into a reusable standalone Scala package and resolved 3 medium-severity security findings and a production bug.",
+        image: "/projects/aws_logo.svg.png",
+        imageFit: "contain",
+        imageGallery: [],
+        tags: ["Scala", "AWS", "EventBridge", "EC2"],
+        demoUrl: "#",
+        githubUrl: "#"
+    },
+    {
+        id: -12,
+        title: "ViTAL Lab Research",
+        description: "Undergraduate Researcher: enhancing a video pipeline that identifies behaviors in profoundly autistic subjects.",
+        extendedDescription: "At Georgia Tech's ViTAL Lab, I work on a pipeline that turns research video into pose estimates and subject tracks to help identify behaviors in profoundly autistic subjects. I enhanced the lab's YOLOv8 detection, OSNet re-identification, and ViTPose pose estimation pipeline across 41 hours of video from 6 subjects, raising re-identification F1 score by 40%. To measure that, I hand-labeled 1,000+ ground-truth images and presented validation metrics to the PI and outside research partners, which led to model upgrades and new preprocessing. Processing runs on a Slurm cluster.",
+        image: "/projects/vital-lab.png",
+        imageGallery: [],
+        tags: ["YOLO", "OSNet", "ViTPose", "Slurm"],
+        demoUrl: "#",
+        githubUrl: "#"
+    },
+    {
+        id: -11,
+        title: "EchoChamber",
+        description: "A Letterboxd-style social platform for logging, rating, and sharing music albums with friends.",
+        extendedDescription: "EchoChamber is a social album-logging app where users rate records from 0.0 to 10.0, write quick takes or full reviews, follow friends, and browse their reviews in a 3D cover-flow feed. Album pages show every review plus a consensus score from the people you follow, computed with a MongoDB aggregation. Album metadata and cover art come from MusicBrainz and the Cover Art Archive, cached in MongoDB with a 30-day TTL and rate limited to stay within the API's limits. Each page tints itself to match the album's cover art. Built solo with Next.js 16, React 19, Tailwind CSS v4, NextAuth, and MongoDB Atlas, deployed on Vercel.",
+        image: "/projects/echo-chamber.png",
+        imageGallery: [],
+        tags: ["Next.js", "MongoDB", "NextAuth"],
+        demoUrl: "https://echo-chamber-lac.vercel.app",
+        githubUrl: "#"
+    },
+    {
         id: -10,
         title: "Deloitte",
-        description: "Software Engineer / Consultant: unified 5 siloed behavioral health databases and built cross-agency utilization analytics.",
-        extendedDescription: "As a Software Engineer / Consultant (Summer 2026), I made previously siloed behavioral health data usable across agencies. I consolidated 5 agency-owned databases into Azure Data Lake Storage Gen2 using a Databricks medallion architecture, enabling first-time cross-agency identity resolution so analysts could track how individuals used behavioral health resources across government touchpoints. I led client-facing requirements meetings, produced 70+ pages of source-system technical documentation (including example SQL), and designed a Power BI dashboard with geographic and timeline views of cross-resource utilization, backed by a Python agent that kept dashboard documentation in sync with the live artifact.",
+        description: "GPS Summer Scholar, Software Engineering: built cross-agency behavioral health analytics on a Databricks lakehouse.",
+        extendedDescription: "As a GPS Summer Scholar in Software Engineering (June to July 2026), I helped make previously siloed behavioral health data usable across a state government client's agencies. I built a Power BI dashboard on an Azure Databricks medallion lakehouse that tracks individuals across 5 agency databases, with geographic and timeline views of cross-resource utilization. I led requirements meetings with client stakeholders and turned their feedback into 70+ pages of technical documentation and example SQL for analysts. I also built an AI documentation agent, fed by Python scripts, hooks, and Markdown context, that keeps the dashboard docs in sync with the live report.",
         image: "/projects/deloitte.png",
         imageGallery: [],
-        tags: ["Databricks", "Azure", "Power BI", "Python", "SQL"],
+        tags: ["Databricks", "Azure", "SQL"],
         demoUrl: "#",
         githubUrl: "#"
     },
     {
         id: -9,
         title: "ByteFight",
-        description: "Month-long bot competition on a King-of-the-Hill arena with painting and teleportation—finished near 2,000 Elo, top 15.",
-        extendedDescription: "ByteFight is a month-long competition where participants build the strongest bot possible; bots are continuously matched against each other on a shared ladder. I competed in an earlier ruleset that blended King-of-the-Hill scoring with territory painting and teleportation on a grid arena. My entry ended around 2,000 Elo, roughly top 15 overall. The bot combined minimax search, Monte Carlo tree search (MCTS), alpha-beta pruning, and A* pathfinding, with performance-critical logic in C++ exposed to Python through nanobind, plus simultaneous perturbation stochastic approximation (SPSA) for parameter tuning.",
+        description: "Month-long Georgia Tech bot ladder on a King-of-the-Hill arena with painting and teleportation. Peaked at 8th of ~60 teams (~2,000 Elo).",
+        extendedDescription: "ByteFight is a month-long Georgia Tech competition where participants build the strongest bot possible; bots are continuously matched against each other on a shared ladder. I competed in an earlier ruleset that blended King-of-the-Hill scoring with territory painting and teleportation on a grid arena. My entry peaked at 8th of ~60 teams, around 2,000 Elo. The bot combined minimax search, Monte Carlo tree search (MCTS), alpha-beta pruning, and A* pathfinding, with performance-critical logic in C++ exposed to Python through nanobind, plus simultaneous perturbation stochastic approximation (SPSA) for parameter tuning.",
         image: "/projects/bytefight.png",
         imageGallery: [],
-        tags: ["MCTS", "Alpha-Beta", "A*", "C++", "SPSA"],
+        tags: ["MCTS", "Alpha-Beta", "A*", "C++"],
         demoUrl: "https://bytefight.org/home",
         githubUrl: "https://github.com/Carbinski/LeBallerBots"
     },
@@ -72,9 +107,9 @@ const projects = [
     },
     {
         id: -4,
-        title: "SynchHub",
+        title: "SyncHub",
         description: "A multiplatform app designed to manage all user generated, education related media",
-        extendedDescription: "SynchHub was a Spring 2026 GT iOS Club project where I served as a Senior Developer leading the Content Management subteam. My responsibilities included content storage and semantic search features, plus core work on content grouping, an infinite canvas, and a batching system. I also created educational content to teach developers MVVM and development best practices.",
+        extendedDescription: "SyncHub was a Spring 2026 GT iOS Club project where I served as a Senior Developer leading a 6-developer Content Management sub-team, assigning work and reviewing PRs. My responsibilities included content storage and Core Spotlight semantic search features, plus core work on content grouping, an infinite canvas, and a batching system. I also created educational content to teach developers MVVM and development best practices.",
         image: "/projects/synchub.png",
         imageGallery: [],
         tags: ["iOS", "Swift", "Firebase", "Spotlight"],
@@ -84,11 +119,11 @@ const projects = [
     {
         id: -3,
         title: "Chess Engine",
-        description: "A classical chess engine utilizing Alpha-Beta Pruning and Minimax evaluation to achieve an ~2100+ elo",
-        extendedDescription: "This chess engine was built from the ground up, implementing search algorithms such as Alpha-Beta Pruning with Minimax evaluation. It features iterative deepening, move ordering heuristics, and transposition tables to achieve competitive play at an estimated 2100+ Elo rating. Features also include the following: Open Book, PeSTO Position Evaluation, Killer Move Heuristics, Null Move Pruning, Adaptive Game Phase Evaluation, Adaptive Time Management based Search, Buffers to optimze Java's garbage collection, Stat Tracking, and Quiescence Search. I ended up create ~20 version of the bot. I originally created them in Python for ease of development, but I eventually started hitting performance issues and decided to switch to Java. To validate the bots improvement, I had them automatically play games against the pervious versions of bots and recorded the results.",
+        description: "A Java chess engine using alpha-beta minimax, iterative deepening, and PeSTO evaluation, rated ~2,100 Elo by a FIDE Master",
+        extendedDescription: "This chess engine was built from the ground up, implementing search algorithms such as Alpha-Beta Pruning with Minimax evaluation. It features iterative deepening, move ordering heuristics, and transposition tables to achieve competitive play at an estimated 2100+ Elo rating. Features also include the following: Open Book, PeSTO Position Evaluation, Killer Move Heuristics, Null Move Pruning, Adaptive Game Phase Evaluation, Adaptive Time Management based Search, Buffers to optimze Java's garbage collection, Stat Tracking, and Quiescence Search. I ended up create ~20 version of the bot. I originally created them in Python for ease of development, but I eventually started hitting performance issues and decided to switch to Java. To validate the bots improvement, I had them automatically play games against the pervious versions of bots and recorded the results. Across those versions, the search optimizations cut per-move search time by more than 10x, and a FIDE Master rated the final engine at ~2,100 Elo. I also built a Next.js and FastAPI web app to play any of the 20+ Python and Java engine versions in the browser, with search depth shown live.",
         image: "/projects/chess.png",
         imageGallery: [],
-        tags: ["Java", "Python", "Pruning", "Minimax"],
+        tags: ["Java", "Python", "Next.js", "FastAPI"],
         demoUrl: "#",
         githubUrl: "https://github.com/Carbinski/chess_engine"
     },
@@ -194,7 +229,7 @@ const projects = [
     {
         id: 7,
         title: "SpecTackles",
-        description: "Hackathon-winning augmented reality glasses that help users control smart home devices with hand gestures.",
+        description: "HackGT 11: placed 2nd in Snap's AR track with AR glasses that control smart home devices.",
         extendedDescription: "SpecTackles is a hackathon-winning project featuring augmented reality glasses that enable users to control smart home devices through intuitive hand gestures. Using Snap's Lens Studio for AR gesture recognition and a Next.js web dashboard for device management, the system bridges the gap between wearable tech and home automation. Firebase handles real-time state synchronization between the glasses and connected devices.",
         image: "/projects/spectackles.png",
         imageGallery: [],
@@ -206,7 +241,7 @@ const projects = [
         id: 8,
         title: "Agronav Research Analysis",
         description: "Project focused on evaluating the generalizability of Agronav, a resarch paper on using ML for robot navigation.",
-        extendedDescription: "This research project investigates the generalizability of Agronav, a machine learning framework for autonomous robot navigation in agricultural environments. The analysis involves replicating the original experiments, testing with new datasets and terrains, and evaluating model performance across different conditions. Conducted using TensorFlow and Python, with findings presented in an academic format.",
+        extendedDescription: "This research project in Metz, France investigated the generalizability of Agronav, a machine learning framework for autonomous robot navigation in crop fields. I replicated the pipeline, training a ResNeSt segmentation model that matched the paper's mIoU, and trained a Deep Hough Transform line detector for crop-row centerlines with flip augmentation that nearly matched the paper's EA-score. Findings were presented at a peer conference.",
         image: "/projects/agronav.png",
         imageGallery: [],
         tags: ["AI", "TensorFlow", "Python"],
@@ -274,11 +309,14 @@ export const ProjectSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, key) => (
                         <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
-                            <div className="h-48 overflow-hidden">
+                            <div className={cn("h-48 overflow-hidden", project.imageFit === "contain" && "bg-white")}>
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    className={cn(
+                                        "w-full h-full transition-transform duration-500 group-hover:scale-110",
+                                        project.imageFit === "contain" ? "object-contain p-6" : "object-cover"
+                                    )}
                                 />
                             </div>
 
