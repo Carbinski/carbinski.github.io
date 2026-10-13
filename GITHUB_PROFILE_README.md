@@ -31,6 +31,7 @@ I'm a **Computer Science** undergrad at [**Georgia Tech**](https://www.gatech.ed
 | [**EchoChamber**](https://echo-chamber-lac.vercel.app) | Social album logging: Next.js 16, MongoDB, NextAuth, MusicBrainz. |
 | [**LeBallerBots**](https://github.com/Carbinski/LeBallerBots) | [**ByteFight**](https://bytefight.org/home) competition bot. Peaked at **8th of ~60 teams** (~2,000 Elo); MCTS, alpha-beta, A*, C++/nanobind, SPSA. |
 | [**Chess engine**](https://github.com/Carbinski/chess_engine) | Java engine with alpha-beta minimax and PeSTO evaluation, rated **~2,100 Elo** by a FIDE Master; Next.js + FastAPI web app to play every version. |
+| [**ml-trading**](https://github.com/Carbinski/ml-trading) | Learning repo: OHLCV cleaning, chronological splits, regression, and Q-learning / Dyna-Q. |
 | [**InfraBlocks**](https://github.com/infrablocks-oss/InfraBlocks) | **HackGT 12**, Best Developer Tool: React Flow + Terraform + AWS. |
 | [**SpecTackles**](https://github.com/Carbinski/HackGT-Temp) | **HackGT 11**, 2nd in Snap's AR track: AR smart-home control (Lens Studio + Raspberry Pi). |
 | [**Macro Tracking App**](https://github.com/Carbinski/Macro-Tracking-App) | Deployed **MACRO_TRACKER_V3.0**: minimalist terminal-style UI for daily macros and food logging. |

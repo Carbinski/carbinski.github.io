@@ -40,6 +40,18 @@ const projects = [
         githubUrl: "#"
     },
     {
+        id: 12,
+        title: "ML Trading",
+        description: "Learning repo for price data, chronological splits, and logged experiments in regression and reinforcement learning.",
+        extendedDescription: "ml-trading is where I work through Machine Learning for Trading ideas on daily prices. The loader cleans OHLCV bars onto the days SPY actually traded, leaves missing sessions as NaN instead of filling from the future, and splits train and test by date. Logged experiments cover linear regression, kNN, decision trees, kernel SVR, a voting regressor, and Q-learning with Dyna-Q, aimed at next-day returns. Python 3.11 and pandas.",
+        image: "/projects/ml-trading.png",
+        imageFit: "contain",
+        imageGallery: ["/projects/ml-trading.png", "/projects/ml-trading-heatmap.png"],
+        tags: ["Python", "pandas", "ML"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/Carbinski/ml-trading"
+    },
+    {
         id: -10,
         title: "Deloitte",
         description: "GPS Summer Scholar, Software Engineering: built cross-agency behavioral health analytics on a Databricks lakehouse.",
